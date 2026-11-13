@@ -57,7 +57,7 @@ a { text-decoration: none; color: inherit; }
 /* MAIN */
 .main {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   padding: 10px 30px 30px;
 }
 .standings { flex: 1; padding-right: 30px; }

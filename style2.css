@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f5f7;
+    color: #10182b;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    height: 90px;
+    background: linear-gradient(100deg, #a71919, #c21c1c);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 900;
+    font-style: italic;
+    border-right: 2px solid white;
+    padding-right: 45px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    font-size: 43px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd6d6;
+}
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #b51d1d;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+/* Table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 2px solid #c51d1d;
+    border-radius: 7px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 28px;
+}
+
+thead {
+    background: #a91c1c;
+    color: white;
+}
+
+th {
+    padding: 17px 15px;
+    font-weight: 700;
+    border-right: 2px solid white;
+}
+
+td {
+    padding: 19px 15px;
+    border-right: 2px solid #c51d1d;
+}
+
+tbody tr:nth-child(even) {
+    background: #e9edf1;
+}
+
+tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+tbody tr:hover {
+    background: #f8dede;
+    transition: 0.2s;
+}
+
+/* Team Column */
+
+.team {
+    text-align: left;
+    padding-left: 45px;
+    text-transform: lowercase;
+}
+
+/* Ranking Colors */
+
+.rank {
+    font-weight: 900;
+    width: 7%;
+}
+
+.champion {
+    color: #079b70;
+}
+
+.confederation {
+    color: #168ee5;
+}
+
+/* Legend */
+
+.legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 45px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.legend-box {
+    width: 44px;
+    height: 44px;
+    border: 2px solid #10182b;
+    border-radius: 5px;
+}
+
+.champions-box {
+    background: #079b70;
+}
+
+.confederation-box {
+    background: #168ee5;
+}
+
+.champions-text {
+    color: #079b70;
+}
+
+.confederation-text {
+    color: #168ee5;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        height: auto;
+        border-right: none;
+        padding: 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    table {
+        min-width: 650px;
+        font-size: 18px;
+    }
+
+    th, td {
+        padding: 14px 10px;
+    }
+
+    .team {
+        padding-left: 15px;
+    }
+
+    .legend {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .legend-item {
+        font-size: 16px;
+    }
+}
